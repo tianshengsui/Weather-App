@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvy1AsqhwG1TqQHO6htGAsAGgUlg9BSnw&libraries=places"
+    ></script>
+    <script defer src="script.js"></script>
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="city-name">Weather Forecast</h1>
+        <h2 id="weather-description">Vancouver</h2>
+      </div>
+      <div class="weather-container">
+        <div class="icon-container">
+          <span><img src="icons/c02d.png" alt="" icon /></span>
+        </div>
+
+        <div class="content">
+          <div class="detail-section">
+            <div class="detail">
+              <div class="title">Wind</div>
+              <div class="value" data-wind>TBD</div>
+            </div>
+            <div class="detail bordered">
+              <div class="title">Temperature</div>
+              <div class="value" data-temperature>TBD</div>
+            </div>
+            <div class="detail">
+              <div class="title">Precipitation</div>
+              <div class="value" data-precip>TBD</div>
+            </div>
+          </div>
+          <div class="city-search-container">
+            <input
+              type="text"
+              class="city-search"
+              placeholder="Enter Location"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
